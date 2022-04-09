@@ -1,0 +1,1015 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	background-color: #111111;
+}
+
+header {
+	width: 100%;
+	height: 70px;
+	background-color: #fda500;
+	border-bottom: 3px solid #111111;
+	position: fixed;
+}
+
+/*Contenedor de logo y boton*/
+.nav-top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+}
+
+/*Contenedor de logo*/
+.nav-logo {
+	display: flex;
+	justify-content: center;
+	width: 70%;
+	margin-left: 45px;
+}
+
+/*Imagen Logo*/
+.nav-logo img {
+	width: 200px;
+	line-height: 70px;
+}
+
+/*Bar y cross boton*/
+#nav-btn {
+	background: none;
+	border: none;
+	font-size: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*Contenedor navegador*/
+.nav-content-items {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #111111;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 100%;
+	transition: left 0.3s;
+}
+
+.nav-content-items_visible {
+	left: 0;
+}
+
+/*Items navegador*/
+.nav-content-items ul {
+	margin: 0;
+	padding: 0;
+}
+
+.nav-content-items ul li {
+	font-size: 30px;
+	list-style: none;
+	text-align: center;
+	margin: 20px 4px;
+	padding: 0 8px;
+}
+
+.nav-content-items ul li a:hover {
+	color: rgb(221, 211, 221);
+	transition: .5s;
+}
+
+.nav-content-items a {
+	color: #fda500;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*Imagen portada*/
+.portada-img {
+	width: 100%;
+	height: 372px;
+	background: url(../images/hamburguesa-tapa900x302.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	border-bottom: 3px solid #111111;
+}
+
+/* Contenido de mitad de pagina principal */
+.mid-home {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background-color: #111111;
+}
+
+/*SOBRE NOSOTROS*/
+.nosotros-titulo, .pedido-home-titulo {
+	font-size: 18px;
+	color: #fda500;
+	margin: 20px 0;
+	display: flex;
+	justify-content: center;
+
+}
+
+.nosotros-titulo h2, .pedido-home-titulo h2 {
+	width: 200px;
+	border-right: 3px solid #fda500;
+	border-left: 3px solid #fda500;
+	text-align: center;
+}
+
+.nosotros-div p {
+	color: rgb(221, 211, 221);
+	font-size: 20px;
+	padding: 0 30px;
+}
+
+/*HACE TU PEDIDO*/
+.pedido-home {
+	margin-top: 30px;
+}
+
+.pedido-home-titulo {
+	font-size: 18px;
+	color: #fda500;
+	margin: 20px 0;
+}
+
+.form-home-data {
+	display: flex;
+	justify-content: center;
+}
+
+.form-home-h3 {
+	font-size: 20px;
+	color: #fda500;
+	padding: 2px 0;
+}
+
+.form-home-input {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 20px;
+}
+
+.form-home-btn {
+	display: flex;
+	padding: 30px 0 10px 0;
+	justify-content: center;
+}
+
+.form-home-btn button {
+	font-size: 18px;
+	width: 100px;
+	height: 40px;
+	border-radius: 20px;
+	border: 2px solid #fda500;
+	color: #fda500;
+	background-color: #111111;
+	text-align: center;
+}
+
+.form-home-btn button:hover {
+	color: #111111;
+	background-color: #fda500;
+	transition: .5s;
+	cursor: pointer;
+}
+
+/* Captcha */
+#completar-captcha {
+	color: rgb(221, 221, 221);
+	font-size: 25px;
+	margin: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+}
+
+#captcha {
+	font-size: 30px;
+	color: rgb(221, 221, 221);
+	border: 2px solid rgb(221, 221, 221);
+	padding: 0 20px;
+	margin: 0 30px;
+}
+
+#value-form {
+	font-size: 20px;
+	color: rgb(221, 221, 221);
+	margin-top: 0;
+	text-align: center;
+}
+
+#value-captcha {
+	font-size: 20px;
+	color: rgb(221, 221, 221);
+	text-align: center;
+}
+
+.contenedor-captcha {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#input-captcha {
+	height: 30px;
+	width: 100px;
+	margin: 0 10px;
+	padding: 0 20px;
+}
+
+.separador {
+	width: 100%;
+	height: 40px;
+	background: url(../images/separador40.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 5px;
+	margin-top: 20px;
+}
+
+/* Pie de pagina */
+footer {
+	background-color: #fda500;
+}
+
+.imagen-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagen-logo img {
+	width: 200px;
+}
+
+.div-redes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.div-redes div p {
+	color: #111111;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.logos-footer a img {
+	width: 50px;
+	padding: 0 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/*Media query Pagina 1*/
+@media only screen and (min-width: 900px) {
+	header {
+		height: 120px;
+	}
+
+	/*Contenedor de logo y boton*/
+	.nav-top {
+		height: 120px;
+		width: 100%;
+	}
+
+	/*Contenedor de logo*/
+	.nav-logo {
+		justify-content: flex-start;
+		width: 100%;
+		margin-left: 5%;
+	}
+
+	/*Imagen Logo*/
+	.nav-logo img {
+		width: auto;
+		max-height: 90px;
+	}
+
+	/*Bar y cross boton*/
+	#nav-btn {
+		display: none;
+	}
+
+	/*Contenedor navegador*/
+	.nav-content-items {
+		justify-content: flex-end;
+		align-items: center;
+		background-color: transparent;
+		height: 70px;
+		top: 0;
+		left: 0;
+		transition: none;
+	}
+
+	/*Items navegador*/
+	.nav-content-items ul {
+		height: 70px;
+		display: flex;
+		line-height: 70px;
+		margin-right: 10%;
+	}
+
+	.nav-content-items ul li a:hover {
+		color: #fda500;
+		background-color: #111111;
+	}
+
+	.nav-content-items a {
+		color: #111111;
+		padding: 2px 15px;
+		border-bottom: 2px solid black;
+	}
+
+	/*Imagen portada*/
+	.portada-img {
+		height: 758px;
+		background: url(../images/hamburguesa-tapa1903x638.jpg);
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		border-bottom: 3px solid #111111;
+	}
+
+	/* Contenido de mitad de pagina principal */
+	.mid-home {
+		display: flex;
+		justify-content: center;
+	}
+
+	/*SOBRE NOSOTROS*/
+	.nosotros-div, .pedido-home {
+		width: 50%;
+	}
+
+	.nosotros-titulo , .pedido-home-titulo {
+		display: flex;
+		justify-content: center;
+	}
+
+	.nosotros-titulo h2 , .pedido-home-titulo h2 {
+		width: 200px;
+		border-right: 3px solid #fda500;
+		border-left: 3px solid #fda500;
+	}
+
+	.nosotros-div p {
+		padding: 0 10%;
+	}
+
+	.pedido-home {
+		margin-top: 0;
+	}
+
+	.separador {
+		height: 60px;
+		background: url(../images/separador60.jpg);
+	}
+	
+	/* PIE DE PAGINA */
+	footer {
+		display: flex;
+		height: 150px;
+	}
+	
+	.imagen-logo {
+		width: 50%;
+	}
+	
+	.imagen-logo img {
+		width: 250px;
+	}
+	
+	.div-redes {
+		width: 50%;
+		justify-content: center;
+	}
+	
+	.logos-footer a img {
+		margin-bottom: 0px;
+	}
+}
+
+/* Pagina 2 - Productos */
+/* Logos titulos - Nuestras Burguers - Sucursales */
+/*Imagen inicial*/
+.nuestrasburguers {
+	display: flex;
+	justify-content: center;
+}
+
+.nuestrasburguers img {
+	width: 100%;
+	max-width: 700px;
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+
+/* Titulos de hamburguesas */
+.content-productos h2 {
+	font-size: 25px;
+	color: #fda500;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: 'Antonio', sans-serif;
+}
+
+/* Contenedor de imagenes y listas pagina 2 */
+.productos1, .productos2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*Imagenes hamburguesas*/
+.productos1 div img, .productos2 div img {
+	width: 100%;
+	max-width: 300px;
+}
+
+/*Listas ingredientes hamburguesas*/
+.productos1 div ul, .productos2 div ul {
+	font-size: 15px;
+	color: rgb(221, 221, 221);
+	list-style: none;
+	text-align: center;
+	font-family: 'Antonio', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0;
+}
+
+.content2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 400px;
+	border-bottom: 1px solid rgb(221, 221, 221);
+	border-radius: 15%;
+}
+
+.hamburguesa_50 {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	margin: 0;
+}
+
+/*Logo titulo - Precios*/
+.logo-precios {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin: 30px 0;
+}
+
+.logo-precios img {
+	width: 80%;
+	max-width: 350px;
+}
+
+/*Tabla de precios*/
+.container-tabla {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.tabla {
+	text-align: center;
+	margin: 0 10px;
+}
+
+/*Tabla de precios fila 1*/
+.tabla thead tr th {
+	font-size: 85%;
+	color: #fda500;
+	border: 1px solid rgb(221, 221, 221);
+	width: 100px;
+	height: 50px;
+	padding: 5px 0;
+	min-width: 60px;
+}
+
+.tabla tbody tr td {
+	font-size: 85%;
+	border: 1px solid rgb(221, 221, 221);
+	width: 100px;
+	height: 50px;
+	padding: 5px 0;
+	min-width: 60px;
+}
+
+.resaltar {
+	font-weight: bold;
+	color: #111111;
+	background-color: #fda500;
+}
+
+.noresaltar {
+	color: rgb(221, 211, 221);
+}
+
+/* Aclaracion de precios de tabla */
+.aclaracion-tabla p {
+	font-size: 15px;
+	color: rgb(221, 221, 221);
+	text-align: center;
+	margin-top: 5px;
+}
+
+.comp-tabla {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.comp-tabla-1 {
+	width: 50%;
+	margin-bottom: 5px;
+}
+
+.comp-tabla-1 p {
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.comp-tabla-1 input, .comp-tabla-1 select {
+	width: 70%;
+}
+
+.comp-tabla-btn {
+	display: flex;
+	justify-content: space-around;
+	margin: 10px 50px 0 50px;
+}
+
+.comp-tabla-input {
+	display: flex;
+}
+
+.comp-tabla-2 button {
+	font-size: 17px;
+	font-weight: bold;
+	color: #111111;
+	background-color: #fda500;
+	border: 1px solid #111111;
+	border-radius: 5px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.comp-tabla-2 button:hover {
+	color: #fda500;
+	background-color: #111111;
+	border-color: #fda500;
+	cursor: pointer;
+}
+
+/*Aclaracion completar campo inputs tabla*/
+.comp-campo {
+	color: rgb(221, 221, 221);
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#tbody tr td input{
+	margin: 5px 0;
+	width: 85%;
+}
+
+#tbody tr td button{
+	font-size : 10px;
+	margin: 3px 0;
+	width: 85%;
+}
+
+/*Clases agregadas desde JS*/
+.editar-nombre-ocultar, .editar-precio-ocultar {
+	display: none;
+}
+
+.editar-nombre-mostrar, .editar-precio-mostrar {
+	display: inline-block;
+}
+
+.fila-ocultar {
+	display: none;
+}
+
+/*Media query Pagina 2*/
+@media only screen and (min-width: 900px) {
+	.nuestrasburguers {
+		display: flex;
+		justify-content: center;
+	}
+
+	.nuestrasburguers img {
+		width: 50%;
+		margin-top: 115px;
+		margin-bottom: 50px;
+	}
+
+	/* Titulos de hamburguesas */
+	.content-productos h2 {
+		font-size: 35px;
+	}
+
+	/* Contenedor de imagenes y listas pagina 2 */
+	.productos1, .productos2 {
+		flex-direction: row;
+		justify-content: space-around;
+		margin-top: 20px;
+	}
+
+	/*Imagenes hamburguesas*/
+	.productos1 div img, .productos2 div img {
+		max-width: 80%;
+		border-bottom: 2px solid rgb(221, 221, 221);
+	}
+
+	/*Listas ingredientes hamburguesas*/
+	.productos1 div ul, .productos2 div ul {
+		font-size: 20px;
+		margin-top: 10px;
+		min-height: 140px;
+	}
+
+	/*Contenedor auxiliar de hamburguesa y lista*/
+	.content2 {
+		flex-direction: column;
+		max-width: none;
+		border-bottom: none;
+		border-radius: 0;
+	}
+
+	/*Contenedor auxiliar de 50% de ancho*/
+	.hamburguesa_50 {
+		width: 80%;
+	}
+
+	/*Contenedor principal inputs y botones tabla*/
+	.comp-tabla-input {
+		justify-content: center;
+		margin: 0 300px;
+	}
+
+	/*Tabla de precios fila 1*/
+	.tabla thead tr th, .tabla tbody tr td, .aclaracion-tabla p, .comp-tabla-1 p, .comp-campo {
+		font-size: 20px;
+	}
+
+	/*Contenedor de texto e inputs de tabla*/
+	.comp-tabla-1 {
+		width: 100%;
+	}
+
+	.comp-tabla-1 input, .comp-tabla-1 select {
+		max-width: 300px;
+	}
+
+	/*Contenedor botones formulario de tabla*/
+	.comp-tabla-btn {
+		justify-content: center;
+	}
+
+	.comp-tabla-2 button {
+		font-size: 20px;
+		margin: 0 20px;
+	}
+	#tbody tr td button{
+		font-size : 15px;
+		margin: 3px 0;
+		width: 85%;
+	}
+}
+
+/* Pagina 3 - Contacto  */
+/*Imagen Nuestras Sucursales*/
+.nuestrassucursales {
+	display: flex;
+	justify-content: center;
+}
+
+.nuestrassucursales img {
+	margin-top: 80px;
+	width: 100%;
+	max-width: 700px;
+	margin-bottom: 20px;
+}
+
+/* Subtitulo - Nos podes encontar en */
+.subtitulo-sucursales {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.subtitulo-sucursales h1 {
+	font-family: 'Antonio', sans-serif;
+	font-size: 20px;
+	color: rgb(221, 221, 221);
+}
+
+/*Contenedores sucursales*/
+.direcciones-sucursales {
+	color: #fda500;
+	font-size: 15px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.direcciones-sucursales > div {
+	padding: 0 5px;
+	border: 3px solid rgb(221, 221, 221);
+	background-color: #111111;
+	border-radius: 10px;
+	width: 200px;
+	height: 160px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.direcciones-sucursales h3 {
+	font-size: 20px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.direcciones-sucursales ul {
+	list-style: none;
+	padding: 0 20px;
+	margin: 0;
+}
+
+.direcciones-sucursales ul li i {
+	margin: 0 8px;
+}
+
+.contacto-wp {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.contacto-wp a {
+	color: #fda500;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+.contacto-wp p {
+	padding: 10px;
+	border: 2px solid rgb(221, 221, 221);
+	margin-top: 20px;
+}
+
+.contacto-wp p:hover {
+	color: #111111;
+	background-color: #fda500;
+	transition: .5s;
+}
+
+.contacto-wp p i {
+	margin: 0 5px;
+}
+
+/* Franquicias */
+.logo-franquicias {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.logo-franquicias img {
+	width: 80%;
+}
+
+.franquicias {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.franquicias > p {
+	color: rgb(221, 221, 221);
+	text-align: Center;
+	font-size: 15 px;
+	margin: 20px;
+}
+
+#btn-consultanos {
+	font-size: 15px;
+	text-align: center;
+	margin-top: 10px;
+	width: 140px;
+	height: 30px;
+	border: 2px solid #fda500;
+	background-color: #111111;
+	color: rgb(221, 221, 221);
+	border-radius: 5px;
+}
+
+#btn-consultanos:hover {
+	background-color: #fda500;
+	color: #111111;
+	transition: .5s;
+	cursor: pointer;
+}
+
+.borde-franquicias {
+	border: 2px solid rgb(221, 221, 221);
+	border-radius: 15px;
+	margin: 10px 10px 10px 10px;
+}
+
+/*Contacto / Hace tu pedido*/
+/* Contenedor principal */
+.mid-contacto {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background-color: #111111;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+/* Formulario contacto */
+.form-contacto {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+/* Inputs formulario contacto */
+.input-contacto, .input-email {
+	display: flex;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.input-contacto input, .input-email input {
+	padding: 0;
+	margin: 0 5px;
+	border-radius: 5px;
+	width: 140px;
+	height: 25px;
+}
+
+#input-select {
+	display: flex;
+	justify-content: center;
+}
+
+#input-select select {
+	width: 290px;
+	height: 30px;
+	border-radius: 5px;
+	margin: 5px 0;
+}
+
+.text-area {
+	display: flex;
+	justify-content: center;
+}
+
+.text-area textarea {
+	width: 290px;
+	height: 200px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+/* Boton formulario contacto */
+#content-contacto-btn {
+	display: flex;
+	justify-content: center;
+}
+
+#content-contacto-btn button {
+	margin-top: 20px;
+	width: 290px;
+	height: 30px;
+	border-radius: 15px;
+	border: 2px solid #fda500;
+	background-color: #111111;
+	color: #fda500;
+}
+
+#content-contacto-btn button:hover {
+	background-color: #fda500;
+	color: #111111;
+	transition: .5s;
+	cursor: pointer;
+}
+
+#contacto-comentario {
+	color: rgb(221, 221, 221);
+	margin-top: 15px;
+}
+
+/*Media query pagina 3*/
+@media only screen and (min-width: 900px) {
+	/*Imagen Nuestras Sucursales*/
+	.nuestrassucursales {
+		display: flex;
+		justify-content: center;
+	}
+
+	.nuestrassucursales img {
+		margin-top: 125px;
+		width: 50%;
+		min-width: 700px;
+		margin-bottom: 50px;
+	}
+
+	.subtitulo-sucursales h1 {
+		font-size: 35px;
+	}
+
+	/*Contenedores sucursales*/
+	.direcciones-sucursales {
+		font-size: 22px;
+		justify-content: space-around;
+		flex-direction: row;
+		margin-top: 40px;
+	}
+
+	.direcciones-sucursales > div {
+		width: 220px;
+		height: 220px;
+	}
+
+	.direcciones-sucursales h3 {
+		font-size: 30px;
+	}
+
+	/* Franquicias */
+	.logo-franquicias img {
+		width: 40%;
+	}
+
+	.franquicias > p {
+		font-size: 25px;
+		margin: 20px 7%;
+	}
+
+	#btn-consultanos {
+		font-size: 20px;
+		width: 200px;
+		height: 50px;
+		border-radius: 10px;
+	}
+
+	.borde-franquicias {
+		margin: 5% 20%;
+	}
+
+	/*Pagina 3 - Contacto / Hace tu pedido*/
+	/* Contenedor principal */
+	.contacto-pedidos{
+		display: flex;
+		justify-content: center;
+	}
+
+	.mid-contacto {
+		width: 50%;
+		margin-top: 0;
+	}
+
+	/* Formulario contacto */
+	.form-contacto {
+		display: flex;
+		flex-direction: column;
+		margin-top: 10px;
+	}
+
+	/* Inputs formulario contacto */
+	.input-contacto, .input-email {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="shortcut icon" href="images/logos/logo-pestaña.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/5f27d919b8.js" crossorigin="anonymous"></script>
+	<title>Rousiers</title>
+</head>
+<body>
+	<header>
+		<div class="nav-top">
+			<div class="nav-logo">
+				<img src="images/logos/logo-footer.png" alt="Logo">
+			</div>
+			<button id="nav-btn"><i id="bar" class="fas fa-bars"></i></button>
+		</div>
+		<nav class="nav-content-items">
+			<ul>
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="productos.html">PRODUCTOS</a></li>
+				<li><a href="contacto.html">CONTACTO</a></li>
+			</ul>
+		</nav>
+	</header>
+	<figure class="portada-img"></figure>
+	<article class="mid-home">
+		<section class="nosotros-div">
+			<div class="nosotros-titulo">
+				<h2>SOBRE NOSOTROS</h2>
+			</div>
+			<div>
+				<p>Ya en la antigua Roma se servían en puestos callejeros panes planos con olivas o el faláfel en el Medio Oriente. 
+				En la India se acostumbraba desde hace muchos años atras a servir comida callejera.</p>
+				<p>El nombre que le dimos a nuestra marca fue luego de investigar sobre todos los actores importantes que pasaron por el concepto de 	"comida rápida". Y allí es donde encontramos a Paul de Rousiers, el cual fue de los primeros en interesarce y hacer estudios 
+				sobre la rapidez de las personas estadounidenses para consumir sus alimentos.</p>
+				<p>Desde 2010 en Tandil, la pasión por la comida se vive a diario en nuestros locales, impulsada por el concepto de FastGood, 
+				que destaca lo rápido y bueno. En Rousiers la elaboración de productos con altos estándares de calidad, 
+				la mezcla de ingredientes frescos, caseros y procesos artesanales nos permiten brindar a nuestros clientes una experiencia única, 
+				para que disfruten de las mejores hamburguesas, fries, hotdogs, milkshakes, helados, limonadas, cervezas y vinos 
+				en un ambiente relajado y moderno, con la mejor música y atención personalizada.</p>
+			</div>
+		</section>
+		<section class="pedido-home">
+			<div class="pedido-home-titulo">
+				<h2>HACE TU PEDIDO</h2>
+			</div>
+			<form class="form-home">
+				<div class="form-home-data">
+					<div class="form-home-h3">
+						<h3>Nombre</h3>
+						<h3>Producto</h3>
+						<h3>Guarnición</h3>
+						<h3>Bebida</h3>
+						<h3>Domicilio</h3>
+					</div>
+					<div class="form-home-input">
+						<input id="nombre" type="text">
+						<select id="hamburguesa">
+							<option value="Seleccione">Seleccione</option>
+							<option>Caprichosa</option>
+							<option>Costanera</option>
+							<option>Cuzco</option>
+							<option>Gringa</option>
+							<option>Parrillera</option>
+							<option>Completa</option>
+						</select>
+						<select id="guarnicion">
+							<option value="Seleccione">Seleccione</option>
+							<option>Papas Fritas</option>
+							<option>Papas con cheddar</option>
+							<option>Buñuelos de espinaca</option>
+							<option>Aros de cebolla</option>
+							<option>Tenders de pollo</option>
+						</select>
+						<select id="bebida">
+							<option value="Seleccione">Seleccione</option>
+							<option>Coca Cola</option>
+							<option>Sprite</option>
+							<option>Fanta</option>
+							<option>Agua mineral</option>
+							<option>Agua saborizada</option>
+						</select>
+						<input id="domicilio" type="text">		
+					</div>
+				</div>
+				<div>
+					<p id="completar-captcha">Completar Captcha</p>
+					<div class="contenedor-captcha">
+						<p id="captcha"></p>
+						<input type="number" id="input-captcha">
+					</div>
+				</div>
+				<div class="form-home-btn">
+					<button type="button" id="btn-enviar">Enviar</button>
+				</div>
+				<p id="value-form"></p>
+				<p id="value-captcha"></p>
+			</form>
+		</section>
+	</article>
+	<figure class ="separador"></figure>
+	<footer>
+		<figure class ="imagen-logo">
+			<img src="images/logos/logo-footer.png" alt="Logo">
+		</figure>
+		<div class ="div-redes">
+			<div>
+				<p>¡SEGUINOS EN NUESTRAS REDES SOCIALES!</p>
+			</div>
+			<div class="logos-footer">
+				<a href="https://facebook.com" target="_blank"><img src="images/logos/facebook2.png" alt="Logo facebook"></a>
+				<a href="https://twitter.com" target="_blank"> <img src="images/logos/gorjeo2.png" alt="Logo Twitter"></a>
+				<a href="https://instagram.com" target="_blank"><img src="images/logos/instagram2.png" alt="Logo instagram"></a>
+			</div>
+		</div>	
+	</footer>
+	<script src="js/captcha.js" type="text/javascript"></script>
+	<script src="js/responsive.js" type="text/javascript"></script>
+</body>
+</html>
